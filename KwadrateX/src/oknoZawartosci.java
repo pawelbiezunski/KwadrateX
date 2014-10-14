@@ -40,12 +40,14 @@ public class oknoZawartosci extends JPanel implements zmienneGlobalne{
 		obrazek lewyDolnyRog = new obrazek(0,568,"src/obrazki/ekranGlowny/lewyDolnyRog.png");
 		obrazek logoGry = new obrazek(97,24,"src/obrazki/ekranGlowny/logoGry.png");
 		obrazek obszarNaPrzyciski = new obrazek(104,218,"src/obrazki/ekranGlowny/obszarNaPrzyciski.png");
+		obrazek zajawkaEkranGlowny = new obrazek(63,429,"src/obrazki/ekranGlowny/zajawkaEkranGlowny.png");
 		
 		this.add(prawyGornyRog);
 		this.add(prawyDolnyRog);
 		this.add(lewyDolnyRog);
 		this.add(logoGry);
 		this.add(obszarNaPrzyciski);
+		this.add(zajawkaEkranGlowny);
 	}
 	
 	/*
