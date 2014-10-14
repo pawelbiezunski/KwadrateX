@@ -1,3 +1,5 @@
+import java.awt.Dimension;
+
 import javax.swing.JFrame;
 /**
  * Klasa tworząca Główne oknno gry
@@ -5,21 +7,29 @@ import javax.swing.JFrame;
  * @author Lukasz
  *
  */
-public class okno extends JFrame implements zmienneGlobalne{
+public class okno extends JFrame implements zmienneGlobalne, obiekty{
 	
-	private int szerokosc = 480;
-	private int wysokosc = 640;
+	private int szerokosc = szerokoscAplikacji;
+	private int wysokosc = wysokoscAplikacji;
 	
 	/*
 	 * Metoda ustawiająca opcje okna
 	 */
 	public okno(){
 		this.setLayout(null);
-		this.setSize(this.szerokosc, this.wysokosc);
+		this.setSize(this.szerokosc+6, this.wysokosc+28);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 		this.setTitle(this.tytulGry);
+	}
+	
+	/*
+	 * Metoda dodaje odopowiednie ekrany
+	 */
+	public void dodajEkrany(){
+		this.add(ekranGlowny);
+		ekranGlowny.stworzEkranGlowny();
 	}
 	
 	/*

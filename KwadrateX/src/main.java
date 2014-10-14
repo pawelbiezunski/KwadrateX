@@ -11,5 +11,6 @@ public class main implements obiekty{
 	 */
 	public static void main(String args[]){
 		oknoGry.wyswietlOknoGry();
+		oknoGry.dodajEkrany();
 	}
 }
