@@ -31,8 +31,8 @@ public class obrazek extends Component implements zmienneGlobalne{
 		this.imageSrc = zrodloDopliku;
 		this.pobierzObrazek();
 		
-		this.szerokosc = obrazek.getHeight(null);
-		this.wysokosc = obrazek.getWidth(null);
+		this.szerokosc = obrazek.getWidth(null);
+		this.wysokosc = obrazek.getHeight(null);
 		this.ustawRozmiarKomponentu();
 		
 		this.pozycjaX = x;

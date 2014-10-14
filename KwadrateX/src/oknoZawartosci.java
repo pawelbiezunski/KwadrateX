@@ -4,7 +4,8 @@ import javax.swing.JPanel;
 
 /**
  * Klasa tworząca ekran Menu Głównego i ekran Gry. Pamiętajmy o tym by każdy
- * ekran miał dwie metody stworz<nazwa ekranu>, dodajKomponenty<nazwa ekranu>
+ * ekran miał trzy metody stworz<nazwa ekranu>, dodajKomponenty<nazwa ekranu>,
+ * dodajGrafikeWTle<nazwa ekranu>
  * 
  * @author Lukasz
  *
@@ -27,8 +28,24 @@ public class oknoZawartosci extends JPanel implements zmienneGlobalne{
 	 * Metoda dodaje komponenty do Ekranu Głównego
 	 */
 	public void dodajKomponentyEkranuGlownego(){
-		obrazek prawyGornyRog = new obrazek(409,0,"src/prawyGornyRog.png");
+		this.dodajGrafikeWTleEkranuGlownego();
+	}
+	
+	/*
+	 * Metoda dodaje grafike w tle dla Ekranu Głównego
+	 */
+	public void dodajGrafikeWTleEkranuGlownego(){
+		obrazek prawyGornyRog = new obrazek(409,0,"src/obrazki/ekranGlowny/prawyGornyRog.png");
+		obrazek prawyDolnyRog = new obrazek(288,514,"src/obrazki/ekranGlowny/prawyDolnyRog.png");
+		obrazek lewyDolnyRog = new obrazek(0,568,"src/obrazki/ekranGlowny/lewyDolnyRog.png");
+		obrazek logoGry = new obrazek(97,24,"src/obrazki/ekranGlowny/logoGry.png");
+		obrazek obszarNaPrzyciski = new obrazek(104,218,"src/obrazki/ekranGlowny/obszarNaPrzyciski.png");
+		
 		this.add(prawyGornyRog);
+		this.add(prawyDolnyRog);
+		this.add(lewyDolnyRog);
+		this.add(logoGry);
+		this.add(obszarNaPrzyciski);
 	}
 	
 	/*
