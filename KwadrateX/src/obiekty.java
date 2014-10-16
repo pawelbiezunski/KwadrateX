@@ -9,5 +9,5 @@
  */
 public interface obiekty {
 	okno oknoGry = new okno();
-	oknoZawartosci ekranGlowny = new oknoZawartosci();
+	oknoEkranuGlownego ekranGlowny = new oknoEkranuGlownego();
 }

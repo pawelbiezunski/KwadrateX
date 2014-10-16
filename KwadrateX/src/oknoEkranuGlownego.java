@@ -3,14 +3,12 @@ import java.awt.Color;
 import javax.swing.JPanel;
 
 /**
- * Klasa tworząca ekran Menu Głównego i ekran Gry. Pamiętajmy o tym by każdy
- * ekran miał trzy metody stworz<nazwa ekranu>, dodajKomponenty<nazwa ekranu>,
- * dodajGrafikeWTle<nazwa ekranu>
+ * Klasa tworząca ekran Menu Głównego
  * 
  * @author Lukasz
  *
  */
-public class oknoZawartosci extends JPanel implements zmienneGlobalne{
+public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscAplikacji;
@@ -19,7 +17,7 @@ public class oknoZawartosci extends JPanel implements zmienneGlobalne{
 	/*
 	 * Konstruktor ustawia layout i rozmiar danego ekranu (nie zmieniamy tego!)
 	 */
-	public oknoZawartosci(){
+	public oknoEkranuGlownego(){
 		this.setLayout(null);
 		this.setSize(this.szerokoscOkna,this.wysokoscOkna);
 	}
